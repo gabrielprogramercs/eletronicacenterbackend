@@ -1,0 +1,89 @@
+# =========================
+# .NET / ASP.NET Core
+# =========================
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.pdb
+
+# =========================
+# Publish
+# =========================
+**/publish/
+**/wwwroot/lib/
+
+# =========================
+# User-specific files
+# =========================
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# =========================
+# Visual Studio
+# =========================
+.vs/
+.vscode/
+*.vsix
+
+# =========================
+# Rider / JetBrains
+# =========================
+.idea/
+*.sln.iml
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# =========================
+# Test results
+# =========================
+TestResults/
+coverage/
+*.trx
+
+# =========================
+# NuGet
+# =========================
+*.nupkg
+*.snupkg
+.nuget/packages/
+.nuget/NuGet.Config
+
+# =========================
+# Secrets & Configs
+# =========================
+appsettings.Development.json
+appsettings.Local.json
+secrets.json
+
+# =========================
+# Environment files
+# =========================
+.env
+.env.*
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+
+# =========================
+# ASP.NET Core generated
+# =========================
+scaffolding/
+Properties/launchSettings.json
