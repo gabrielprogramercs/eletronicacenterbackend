@@ -19,5 +19,6 @@ namespace eletronicacenterbackend.model.Model
         public string modelo { get; set; }
         public decimal preco { get; set; }
         public string tipo { get; set; }
+        public int MyProperty { get; set; }
     }
 }
