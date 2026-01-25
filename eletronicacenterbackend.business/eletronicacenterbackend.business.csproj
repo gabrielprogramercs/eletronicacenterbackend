@@ -14,4 +14,9 @@
     <Folder Include="Service\Interface\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\eletronicacenterbackend.data\eletronicacenterbackend.data.csproj" />
+    <ProjectReference Include="..\eletronicacenterbackend.model\eletronicacenterbackend.model.csproj" />
+  </ItemGroup>
+
 </Project>
