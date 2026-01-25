@@ -1,16 +1,27 @@
-﻿using eletronicacenterbackend.model.Model;
+﻿using eletronicacenterbackend.business.Service.Interface;
+using eletronicacenterbackend.model.Model;
 using Microsoft.AspNetCore.Mvc;
 
 namespace eletronicacenterbackend.business.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class BarrasLedController : ControllerBase
+    public class BarrasLedController(IBarrasLedService _barrasLedService) : ControllerBase
     {
-        public IActionResult GetBarras()
+
+        [HttpGet]
+        public async Task<IActionResult> GetBarras()
         {
-            var barras = new List<barras_led> { };
-            return Ok();
+            try
+            {
+                var barras = await _barrasLedService.GetAllBarrasLed();
+                return Ok(barras);
+            }
+            catch(Exception e)
+            {
+               return BadRequest(e.Message);
+            }
         }
+
     }
 }
