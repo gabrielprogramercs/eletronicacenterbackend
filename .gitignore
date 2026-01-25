@@ -7,3 +7,5 @@
 /eletronicacenterbackend.model/obj
 /.vs
 /eletronicacenterbackend.business/bin/Debug/net8.0
+/eletronicacenterbackend.data/bin/Debug/net8.0
+/eletronicacenterbackend.model/bin/Debug/net8.0
